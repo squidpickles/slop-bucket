@@ -1,0 +1,67 @@
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  width: 320px;
+  margin: 0;
+  padding: 12px;
+}
+
+h1 {
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+.url {
+  color: #555;
+  font-size: 12px;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 0 0 10px;
+}
+
+legend {
+  padding: 0 4px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 4px 0;
+}
+
+code {
+  background: #f3f3f3;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#already-marked {
+  background: #fff5e5;
+  border: 1px solid #f0c97a;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#needs-permission {
+  background: #eef4ff;
+  border: 1px solid #9ab8e8;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#needs-permission p {
+  margin: 0 0 8px;
+}

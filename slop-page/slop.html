@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Slop</title>
+    <link rel="stylesheet" href="slop.css" />
+  </head>
+  <body>
+    <main>
+      <img src="slop-bucket.png" alt="" class="bucket" />
+      <h1>Slop.</h1>
+      <p>You marked this as slop:</p>
+      <p><code id="target"></code></p>
+      <p class="match">Matched mark: <span id="match"></span></p>
+      <div class="actions">
+        <button id="back">Go back</button>
+        <button id="unmark">Unmark &amp; continue</button>
+        <button id="continue" class="muted">Continue anyway</button>
+      </div>
+    </main>
+    <script src="slop.js"></script>
+  </body>
+</html>

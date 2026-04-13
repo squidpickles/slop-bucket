@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Slop Bucket</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Slop Bucket</h1>
+    <div id="current-url" class="url"></div>
+
+    <div id="needs-permission" hidden>
+      <p>Slop Bucket needs permission to read URLs on all sites so it can intercept navigations to sites you mark.</p>
+      <button id="grant">Grant access</button>
+    </div>
+
+    <div id="already-marked" hidden>
+      <p>This page is already marked as slop (<span id="match-type"></span>: <code id="match-value"></code>).</p>
+      <button id="unmark">Unmark</button>
+    </div>
+
+    <form id="mark-form">
+      <fieldset>
+        <legend>Mark as slop by:</legend>
+        <label><input type="radio" name="type" value="domain" checked /> Domain <code id="opt-domain"></code></label>
+        <label><input type="radio" name="type" value="host" /> Host <code id="opt-host"></code></label>
+        <label><input type="radio" name="type" value="path" /> Path <code id="opt-path"></code></label>
+      </fieldset>
+      <button type="submit">Mark</button>
+    </form>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
